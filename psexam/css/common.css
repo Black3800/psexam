@@ -1,0 +1,66 @@
+:root
+{
+  --ps-pink: #f568ff;
+  --ps-blue: #4a8de0;
+  --ps-bright-pink: #f02bff;
+  --ps-bright-blue: #2679e0;
+  --ps-dark-pink: #c423d1;
+  --ps-dark-blue: #1a5299;
+}
+
+@font-face
+{
+  font-family: 'TH Sarabun New';
+  src: url('../res/font/THSarabunNew.ttf');
+}
+
+@keyframes bgDoodle
+{
+  from
+  {
+    background: var(--ps-blue);
+  }
+  to
+  {
+    background: var(--ps-pink);
+  }
+}
+
+body
+{
+  font-family: 'TH Sarabun New'!important;
+  margin: 0px;
+  padding: 0px;
+  font-size: 2em!important;background: var(--ps-blue);
+  animation: bgDoodle 7s infinite alternate linear;
+}
+
+.noscript
+{
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 99999;
+  background: linear-gradient(rgb(255, 80, 80), rgb(255,50,50));
+  padding: 10vh;
+  color: white;
+}
+
+.noscript h1
+{
+  font-size: 3em;
+}
+
+.noscript p
+{
+  margin-left: 5vw;
+  font-size: 2em;
+}
+
+.page-bg
+{
+  height: 100vh;
+  min-height: 100vh;
+}

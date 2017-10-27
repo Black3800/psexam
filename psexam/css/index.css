@@ -1,0 +1,104 @@
+@keyframes buttonGlow
+{
+  from
+  {
+    box-shadow: 0px 0px 30px rgba(255,255,255,0.6);
+    background: rgba(255,255,255,0.7);
+  }
+  to
+  {
+    box-shadow: 0px 0px 40px rgba(255,255,255,1);
+    background: rgba(255,255,255,1);
+  }
+}
+
+@keyframes fadeIn
+{
+  from
+  {
+    transform: translateY(5vh);
+    opacity: 0;
+  }
+  to
+  {
+    transform: translateY(0vh);
+    opacity: 1;
+  }
+}
+
+.welcome-container
+{
+  width: 70%;
+  max-width: 70%;
+  height: 60%;
+  box-sizing: border-box;
+  position: absolute;
+  top: 15%;
+  left: 14%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+  color: white;
+  animation: fadeIn 1s;
+}
+
+.welcome-container h1
+{
+  font-size: 3.5em;
+  text-shadow: 0px 0px 20px rgba(0,0,0,0.3);
+}
+
+.welcome-container p
+{
+  font-size: 1.5em;
+  opacity: 0.9;
+  margin-top: 10px;
+}
+
+.welcome-container a
+{
+  display: block;
+  width: 30%;
+  max-width: 200px;
+  height: 60px;
+  border-radius: 10px;
+  background: rgba(255,255,255,0.7);
+  color: white;
+  font-size: 2em;
+  text-align: center;
+  line-height: 60px;
+  box-shadow: 0px 0px 30px rgba(255,255,255,0.6);
+  text-shadow: 0px 0px 50px rgba(0,0,0,0.7);
+  opacity: 0.8;
+  transition: opacity 0.5s;
+  animation: buttonGlow 3s infinite alternate linear;
+}
+
+.welcome-container a:visited, .welcome-container a:active
+{
+  color: white;
+  text-decoration: none;
+}
+
+.welcome-container a:hover
+{
+  text-decoration: none;
+  color: var(--ps-blue);
+  opacity: 1;
+}
+
+.welcome-container a:last-of-type:hover
+{
+  color: var(--ps-pink);
+}
+
+.welcome-container .container
+{
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-flow: row;
+  margin-top: 80px;
+}
